@@ -9,9 +9,9 @@ How to use this?
 
 1) Clone the Repo
 
-2) Set Permissions
+2) Go inside your repo folder and set the permissions
 ```
-chmod +x tools/entrypoint
+chmod +x tools/entrypoint tools/permission_fix
 ```
 
 3) Fit the docker-compose.yml to your settings
