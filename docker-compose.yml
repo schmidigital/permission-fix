@@ -2,9 +2,11 @@ nginx:
   image: 'nginx'
   volumes:
     - './www:/www'
-  entrypoint: '/tools/entrypoint_wordpress'
+    - './tools:/tools'
+  entrypoint: '/tools/entrypoint'
   command: 'nginx -g "daemon off;"'
   environment:
+    VOLUME: '/www'
     DOCKER_USER: 'www-data'
     DOCKER_GROUP: 'www-data'
     HOST_USER_ID: 1002
