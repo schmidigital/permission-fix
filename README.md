@@ -19,8 +19,8 @@ chmod +x tools/entrypoint
 VOLUME: '/www' (The Volume you want to chown after setting the permission fix)
 DOCKER_USER: 'www-data' (The User inside the docker)
 DOCKER_GROUP: 'www-data' (The group inside the docker)
-HOST_USER_ID: 1002 (Your User ID)
-HOST_GROUP_ID: 999 (Your Group ID)
+HOST_USER_ID: 1002 (Your User ID, by default in the docker it's 0 for the root user)
+HOST_GROUP_ID: 999 (Your Group ID, by default in the docker it's 0 for the root user)
 ```
 
 4) Let's go
